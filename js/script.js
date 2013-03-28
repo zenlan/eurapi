@@ -1,5 +1,5 @@
 function getKey() {
-  return 'M5r5KUk5p';
+  return 'APIKey';
 }
 
 /* MISC FUNCTIONS */
