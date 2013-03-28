@@ -8,7 +8,7 @@ Using the Europeana API and Metafizzy's Isotope jQuery library.
 
 An API key can be obtained from [Europeana](http://www.europeana.eu/portal/api-documentation.html)
 
-To use [Isotope](http://isotope.metafizzy.co) commercially you should purchase a license.
+"[Isotope](http://isotope.metafizzy.co) may be used in non-commercial and personal applications for free."
 
 ## Links
 
