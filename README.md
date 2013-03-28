@@ -1,10 +1,10 @@
-# Europeana Culture Collage - A streaming mosaic of cultural images
+# Europeana Culture Collage
 
-A doodle using [jQuery](http://jquery.com/), [HTML5](http://html5test.com/),
-[Isotope](http://isotope.metafizzy.co)
-and the [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html)
+## A streaming mosaic of cultural images using [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html) and [Isotope](http://isotope.metafizzy.co)
+
 
 [http://twitter.com/zenlan](http://twitter.com/zenlan)
+
 [http://github.com/zenlan](http://github.com/zenlan)
 
 
