@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if ie]><html class="ie"><![endif]-->
+<!--[if !ie]><html><![endif]-->
+  <head>
+    <title>Europeana Culture Collage</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="Europeana, search, jQuery">
+    <meta name="description" content="A small doodle using the Europeana Solr API, some jQuery, a few HMTL5/CSS3 tricks and Isotope">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://isotope.metafizzy.co/jquery.isotope.min.js"></script>
+    <script src="http://caja.appspot.com/html-css-sanitizer-minified.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel='stylesheet' href='css/isotope.css' />
+    <link rel='stylesheet' href='css/style.css' />
+  </head>
+  <body>
+    <datalist id="recent"></datalist>
+    <div>
+      <div class="banner container clearfix">
+        <div class="title left clearfix">
+          <h2 class="textshadow"><a href="http://www.europeana.eu/portal/" target="_blank">Europeana Culture Collage</a></h2>
+          <p>best viewed in Chrome browser</p>
+          <p>&#8658;&nbsp;<a class="hilink" href="http://www.zenlan.com/collage">new version available</a>&nbsp;&#8656;</p>
+        </div>
+        <div class="form right clearfix">
+          <p>
+            <label for="category">Media Type</label>
+            <select id="category">
+              <option value="IMAGE">Image</option>
+              <option value="TEXT">Text</option>
+              <option value="SOUND">Sound</option>
+              <option value="VIDEO">Video</option>
+              <option value="3D">3D</option>
+            </select>
+          </p>
+          <!--
+          "name": "COUNTRY",
+          "name": "PROVIDER
+          "name": "DATA_PROVIDER",
+          "name": "RIGHTS",
+          "name": "UGC",
+          "name": "LANGUAGE",
+          "name": "YEAR",
+          "name": "TYPE",-->
+          <p>
+            <label for="search">Keywords</label>
+            <input id="query" value="" type="text" list="recent" size="32"/>
+          </p>
+          <p>
+          </p>
+        </div>
+        <div class="library clearfix">
+          <label for="infinite">Infinite Scroll?</label>
+          <input id="infinite" type="checkbox" value="1" checked/>
+          <button id="reset" class="button">Reset</button>
+          <button id="search" class="button">Fetch</button>
+          <button id="shuffle" class="button">Shuffle</button>
+          <input id="offset" type="hidden" value="1"/>
+        </div>
+      </div>
+      <div id="results" class="isotope clearfix">
+        <ul id="results-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
