@@ -1,12 +1,16 @@
-<<<<<<< HEAD
 # Europeana Culture Collage
 
-## A streaming mosaic of cultural images using [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html) and [Isotope](http://isotope.metafizzy.co)
+## A streaming mosaic of cultural images
+
+Using [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html)
+and [Isotope](http://isotope.metafizzy.co)
 
 
-[http://twitter.com/zenlan](http://twitter.com/zenlan)
+[WWW](http://www.zenlan.com/eurapi)
 
-[http://github.com/zenlan](http://github.com/zenlan)
+[Twitter](http://twitter.com/zenlan)
+
+[GitHub](http://github.com/zenlan)
 
 
 ## Copyright and license
@@ -24,7 +28,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-=======
-eurapi
-======
->>>>>>> b76ca1a201f839c71d9f35e9ea7a983a581b365b
