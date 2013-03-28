@@ -6,7 +6,9 @@ Using [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html)
 and [Isotope](http://isotope.metafizzy.co)
 
 
-[WWW](http://www.zenlan.com/eurapi)
+## Links
+
+[Demo](http://www.zenlan.com/eurapi)
 
 [Twitter](http://twitter.com/zenlan)
 
