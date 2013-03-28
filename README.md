@@ -2,9 +2,13 @@
 
 ## A streaming mosaic of cultural images
 
-Using [EUROPEANA API](http://www.europeana.eu/portal/api-documentation.html)
-and [Isotope](http://isotope.metafizzy.co)
+Using the Europeana API and Metafizzy's Isotope jQuery library.
 
+## Notes
+
+An API key can be obtained from [Europeana](http://www.europeana.eu/portal/api-documentation.html)
+
+To use [Isotope](http://isotope.metafizzy.co) commercially you should purchase a license.
 
 ## Links
 
