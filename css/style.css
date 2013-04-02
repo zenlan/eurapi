@@ -56,7 +56,7 @@ img {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -webkit-box-shadow: 1px 1px 0px #F5F1EE;
-  -moz-boz-shadow: 1px 1px 0px #F5F1EE;
+  -moz-box-shadow: 1px 1px 0px #F5F1EE;
   box-shadow:1px 1px 0px  #F5F1EE;
 }
 
@@ -68,7 +68,7 @@ img {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -webkit-box-shadow: 1px 1px 0px #F5F1EE;
-  -moz-boz-shadow: 1px 1px 0px #F5F1EE;
+  -moz-box-shadow: 1px 1px 0px #F5F1EE;
   box-shadow:1px 1px 0px  #F5F1EE;
 }
 
