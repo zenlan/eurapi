@@ -61,7 +61,7 @@ function saveQuery(query) {
     return;
   }
   if(typeof(Storage) !== 'undefined') {
-    recentQueries = getRecentQueries();
+    var recentQueries = getRecentQueries();
     if ($.inArray(query, recentQueries) == -1) {
       if (recentQueries.length == 10) {
         recentQueries.shift();
@@ -86,18 +86,20 @@ function buildRecentQueriesDatalist(selected) {
 function handleSearchResults(data) {
   var items = [], elem;
   $.each(data.items, function(i,item){
-    var classes = 'iso ' + item.type;
-    elem = '<li class="' + classes
-    + '" data-number="' + i
-    + '" Tooltip="' + item.title
-    + '" ObjID="' + item.id
-    + '" ObjURL="' + item.link
-    + '" ObjType="' + item.type
-    + '" ObjExt="' + item.guid
-    + '">'
-    + '<img src="' + item.edmPreview + '"/>'
-    + '</li>';
-    items.push(elem);
+    if (item.hasOwnProperty('edmPreview')) {
+      var classes = 'iso ' + item.type;
+      elem = '<li class="' + classes
+      + '" data-number="' + i
+      + '" Tooltip="' + item.title
+      + '" ObjID="' + item.id
+      + '" ObjURL="' + item.link
+      + '" ObjType="' + item.type
+      + '" ObjExt="' + item.guid
+      + '">'
+      + '<img src="' + item.edmPreview + '"/>'
+      + '</li>';
+      items.push(elem);
+    }
   });
   var $items = $(items.join(''));
   $items.imagesLoaded(function(){
@@ -129,7 +131,9 @@ function handleSearchResults(data) {
 function search() {
   var limit = 48; //max=96
   var offset = $.myElems.offset.val();
-  if (offset > 1) { limit = 10;}
+  if (offset > 1) {
+    limit = 10;
+  }
   var qry = $.myElems.query.val();
   var cat = '';
   //http://preview.europeana.eu/api/v2/search.json?profile=standard&wskey=M5r5KUk5p&rows=20&start=0&query=betty&qf=TYPE:IMAGE&callback=jQuery191028435505530796945_1362058963580&_=1362058963581
@@ -221,10 +225,10 @@ try {
     initElements();
     initIsotope($.myElems.results);
 
-//    var msie = /msie/.test(navigator.userAgent.toLowerCase());
-//    if (msie == true) {
-//      $.myElems.results.append('<li>Best viewed in Chrome browser</li>');
-//    }
+    //    var msie = /msie/.test(navigator.userAgent.toLowerCase());
+    //    if (msie == true) {
+    //      $.myElems.results.append('<li>Best viewed in Chrome browser</li>');
+    //    }
 
     buildRecentQueriesDatalist();
     initInfiniteScroll();
