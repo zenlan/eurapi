@@ -179,9 +179,9 @@ function search() {
 
 function initBaseURLS() {
   $.BaseURLS = {};
-  $.BaseURLS.urlAPI = 'http://www.europeana.eu/api/v2/search.json?profile=standard&wskey=' + getKey();
-  $.BaseURLS.urlObj = 'http://www.europeana.eu/api/v2/record/';
-  $.BaseURLS.urlImg = 'http://europeanastatic.eu/api/image?type=IMAGE&size=BRIEF_DOC&uri=';
+  $.BaseURLS.urlAPI = 'https://www.europeana.eu/api/v2/search.json?profile=standard&wskey=' + getKey();
+  $.BaseURLS.urlObj = 'https://www.europeana.eu/api/v2/record/';
+  $.BaseURLS.urlImg = 'https://europeanastatic.eu/api/image?type=IMAGE&size=BRIEF_DOC&uri=';
 }
 
 function initInfiniteScroll() {
